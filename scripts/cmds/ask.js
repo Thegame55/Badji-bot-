@@ -2,10 +2,10 @@ const axios = require('axios');
 
 const Prefixes = [
   '/ai',
-  'Heaven',
-  'romeo',
+  'games',
+  'Hervé',
   '+ai',
-  'baby',
+  'momy',
   'ai',
   'ask',
 ];
@@ -31,7 +31,7 @@ module.exports = {
       }
       const prompt = event.body.substring(prefix.length).trim();
    if (!prompt) {
-        await message.reply("🎧𝐇𝐄𝐀𝐕𝐄𝐍🎧\n ℰ⍲‿⍲ℰ........? 𝐚𝐬𝐤 𝐲𝐨𝐮𝐫 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧 𝐦𝐲 𝐝𝐞𝐚𝐫.");
+        await message.reply("🌊ЅℂᎯℛℒℰ𝒯🌊 \n\n𝗬𝗢𝗨𝗥 𝗤𝗨𝗘𝗦𝗧𝗜𝗢𝗡 𝗕𝗔𝗕𝗬........?");
         return;
       }
 
@@ -40,10 +40,10 @@ module.exports = {
       const answer = response.data.answer;
 
  
-    await message.reply({ body: `💃𝐇𝐄𝐀𝐕𝐄𝐍 𝐈𝐒 𝐌𝐘 𝐁𝐎𝐒𝐒 🍫
+    await message.reply({ body: ` 🌊ЅℂᎯℛℒℰ𝒯🌊 
 ______________________________  
 ${answer}
-ℰ⋆‿⋆ℰ 🍫𝐇𝐄𝐀𝐕𝐄𝐍🍫`,
+🍫𝗦𝗖𝗔𝗥𝗟𝗘𝗧🍫`,
 });
 
    } catch (error) {
